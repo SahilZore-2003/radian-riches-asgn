@@ -1,0 +1,145 @@
+.top-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+
+    @media (max-width:500px) {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 200px;
+
+        @media (max-width:500px) {
+            width: 100%;
+        }
+
+        @media (max-width:900px) {
+            order: 1;
+            flex-basis: 40%;
+        }
+
+        span {
+            background: var(--orange);
+            color: var(--white);
+            padding: .5rem 1rem;
+            border-radius: 10px;
+
+            svg {
+                margin-right: .5rem;
+            }
+        }
+
+        .img-container {
+            position: relative;
+            margin-top: 2rem;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .index {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: var(--dark);
+                font-size: 1.5rem;
+                background: transparent;
+
+            }
+        }
+    }
+
+    .middle {
+        flex: 1;
+
+        @media (max-width:900px) {
+            order: 3;
+        }
+
+        p {
+            color: #4b5665;
+            font-weight: 600;
+        }
+
+        button {
+            color: var(--blue);
+            background: transparent;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin-top: .6rem;
+            font-size: 1rem;
+        }
+    }
+
+    .end {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        gap: 2rem;
+
+        @media (max-width:500px) {
+            width: 80%;
+        }
+
+
+        @media (max-width:900px) {
+            order: 2;
+            flex-basis: 50%;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            background-color: var(--rating-white);
+            padding: 1rem;
+            border-radius: 15px;
+            color: #074786;
+            font-weight: 400;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 400;
+            }
+
+            .stars {
+                svg {
+                    fill: gold;
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--blue);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+        }
+
+    }
+
+
+}
+
+.top-card-parent {
+    @media(max-width:1000px) {
+        padding-inline: 5% !important;
+    }
+}

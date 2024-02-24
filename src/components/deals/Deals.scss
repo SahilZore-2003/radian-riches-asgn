@@ -1,0 +1,97 @@
+.deal-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    @media (max-width:1000px){
+        padding-inline: 3%;
+    }
+
+
+    h1 {
+        color: var(--dark);
+        font-weight: 400;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 2rem 0;
+
+        @media(max-width:800px) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        @media(max-width:500px) {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+
+    // card css 
+    .card {
+
+        padding: 1rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin: .8rem 0;
+
+            span {
+                background-color: var(--rating-white);
+                padding: 8px 20px;
+                border-radius: 10px;
+                color: var(--rating-blue);
+            }
+        }
+
+        h3 {
+            text-align: center;
+            color: var(--card-text);
+            padding: .3rem 0;
+        }
+
+        p {
+            color: var(--card-text);
+            margin: .5rem 0;
+        }
+
+        .price {
+            display: flex;
+            color: var(--card-text);
+
+            span {
+                color: #9fa9b3;
+                font-size: .9rem;
+                margin-left: .7rem;
+                font-weight: 400;
+            }
+
+            .off {
+                color: #f05767;
+                font-weight: 300;
+            }
+        }
+
+        button {
+            margin-top: 1rem;
+            width: 100%;
+            padding: 12px;
+            color: var(--white);
+            background-color: var(--blue);
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 1.1rem;
+        }
+    }
+}

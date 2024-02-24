@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    --dark: #212731;
+    --white: #fff;
+    --black: #000;
+    --orange: #ff7724;
+    --blue: #1b88f4;
+    --rating-white: #f3f9ff;
+    --rating-blue: #074786;
+    --dark-blue: #2c384a;
+    --card-text:#5c6874;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
